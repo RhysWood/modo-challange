@@ -36,8 +36,24 @@ const getUserById = (request, response) => {
     })
   }
 
+const findUserByEmail = (email) => {
+  let user;
+  return new Promise ((resolve, reject) => {
+    pool.query('SELECT * FROM users WHERE email = $1', [email], (error, results) => {
+      if (error) {
+        throw error
+      }
+      for (let i = 0; i < results.rows.length; i++) {
+        let user = results.rows[i];
+        resolve(user);
+      }
+    })
+  })
+}
+
 module.exports = {
     getUsers,
     getVehicles,
     getUserById,
+    findUserByEmail,
 }
