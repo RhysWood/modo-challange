@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect, useContext } from "react";
+import { Navigate } from "react-router-dom";
 import AuthContext from "../context/AuthProvider";
 import './login.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -46,7 +47,7 @@ export default function Login() {
             setUser('');
             setPwd('');
             setSuccess(true);
-            
+            if (success){<Navigate to="/vehicles"/>}
 
         } catch (err) {
             console.log(err);
@@ -104,6 +105,9 @@ export default function Login() {
         </div>
       </form>
       </div>
+      {success && (
+          <Navigate to="/vehicles" />
+        )}
         </div>
     )
 }
