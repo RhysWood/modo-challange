@@ -1,0 +1,22 @@
+{
+    "name": "modo-challange",
+    "version": "1.0.0",
+    "description": "Express backend in an Express-React project",
+    "main": "server.js",
+    "contributors": [
+      {
+        "name": "Rhys Wood"
+      }
+    ],
+    "license": "MIT",
+    "scripts": {
+      "go": "nodemon server.js"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.1",
+      "express": "^4.17.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.10"
+    }
+  }
