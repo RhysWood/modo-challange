@@ -51,8 +51,8 @@ App.post("/auth", (req, res) => {
    req.session.user_id = user.id;
    res.redirect('/vehicles')
 }).catch(error => {
-    // Get the error
     console.log('error:', error);
+    return res.status(401)
 });
   // console.log("THIS IS MY LOG:" + JSON.stringify(req.body));
 });
