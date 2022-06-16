@@ -52,7 +52,7 @@ App.post("/auth", (req, res) => {
    res.redirect('/vehicles')
 }).catch(error => {
     console.log('error:', error);
-    return res.status(401)
+    res.status(401).send('no user exists in db')
 });
   // console.log("THIS IS MY LOG:" + JSON.stringify(req.body));
 });
