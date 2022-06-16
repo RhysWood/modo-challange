@@ -1,10 +1,13 @@
+DROP TABLE IF EXISTS vehicles CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
 CREATE TABLE "vehicles" (
   "id" SERIAL PRIMARY KEY,
   "make" varchar(250),
   "model" varchar(250),
-  "year" int(10),
+  "year" int,
   "color" varchar(250),
-  "location_id" int(6),
+  "location_id" int,
   "location_description" varchar(500)
 );
 
