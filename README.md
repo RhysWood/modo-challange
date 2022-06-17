@@ -34,7 +34,7 @@ ALTER ROLE me CREATEDB
 ```
 9. Your Database should now look something like this! 
 
-!["Char-CounterScreenshot"](docs/mododb.png)
+!["DB Screenshot"](docs/mododb.png)
 
 ## Fire the App up! 
 10. You will need two terminal tabs open, one inside of the `react-front-end` folder and another inside of the `express-back-end` folder.
@@ -43,6 +43,17 @@ ALTER ROLE me CREATEDB
 
 # Demo
 
-## The login page
+## Login Page
 
 Only users registered in the database can log in, use email `test@example.com` and password `hello` to sucessfully log in, shown below:
+
+!["login eg"](docs/login.gif)
+
+## Vehicles Page
+
+The 'All Vehicles' Page pulls the vehicles from the database and maps through them, creating and rendering a card for each one. This page is responsive for desktop and mobile using flexbox. See below:
+
+!["responsiveness eg"](docs/responsive.gif)
+
+# Wrap up
+I really enjoyed this challange! Thank for you considering me for the role, if you have any questions at all please let me know. 
