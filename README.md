@@ -11,7 +11,7 @@ This application was built using ReactJS, ExpressJS, nodeJS & PostgreSQL.
 
 
 ## Create your Local PostgreSQL Database
-3. In your terminal, `cd` into the express-back-end folder and type `psql`. (if you do not have postgress installed, install it globally using the `npm install -g pg` command)
+3. In your terminal, `cd` into the express-back-end folder and type `psql`. (if you do not have postgress installed, install it globally using the `brew install postgresql` command)
 4. Inside of the psql environment, create a new role named 'me' using the commands below:
 ```
 CREATE ROLE me WITH LOGIN PASSWORD 'password';
