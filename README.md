@@ -41,3 +41,8 @@ ALTER ROLE me CREATEDB
 11. In the express-back-end tab, type `npm run start`, this will boot up the server. 
 12. In the react-front-end tab, type `npm start`.
 
+# Demo
+
+## The login page
+
+Only users registered in the database can log in, use email `test@example.com` and password `hello` to sucessfully log in, shown below:
