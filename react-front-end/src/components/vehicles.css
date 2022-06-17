@@ -1,0 +1,29 @@
+.main {
+    height: auto;
+    height: 100vh;
+    background-color: #f1f6f9;
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 3em;
+    width: 90%;
+}
+
+.body .card {
+    flex: 1;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px;
+    border: none;
+    width: auto;
+    margin-bottom: 70px;
+
+}
