@@ -1,6 +1,5 @@
-import { useRef, useState, useEffect, useContext } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
-import AuthContext from "../context/AuthProvider";
 import "./login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -8,8 +7,6 @@ import axios from "../api/axios";
 const LOGIN_URL = "/auth";
 
 export default function Login() {
-  //global state
-  const { setAuth } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
 
@@ -41,10 +38,7 @@ export default function Login() {
         }
       );
       console.log(JSON.stringify(response?.data));
-      //console.log(JSON.stringify(response));
-      const accessToken = response?.data?.accessToken;
 
-      setAuth({ user, pwd, accessToken });
       setUser("");
       setPwd("");
       setSuccess(true);

@@ -19,7 +19,7 @@ export default function Vehicles() {
   const useVehicle = vehicles.map((vehicle) => {
     return (
       <div key={vehicle.id}>
-        <div className="card" >
+        <div className="card">
           <div key={vehicle.id}>
             <Card style={{ width: "20rem" }} key={vehicle.id}>
               <Card.Body>
@@ -27,9 +27,7 @@ export default function Vehicles() {
                 <Card.Subtitle className="mb-2 text-muted">
                   {vehicle.make} {vehicle.model} ({vehicle.year})
                 </Card.Subtitle>
-                <Card.Text>
-                  {vehicle.location_description}
-                </Card.Text>
+                <Card.Text>{vehicle.location_description}</Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -42,11 +40,7 @@ export default function Vehicles() {
     <>
       <div className="main">
         <Nav />
-        <div className="body">
-     
-
-        {vehicles && useVehicle}
-        </div>
+        <div className="body">{vehicles && useVehicle}</div>
       </div>
     </>
   );
