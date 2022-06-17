@@ -1,6 +1,6 @@
 # Modo-Challange
 
-For this project I was asled to build a web-based application composed of two pages. The first page is a login page with email and password fields. The second page retrieves and displays all vehicle data from a database. The number of vehicles in the database should not assumed to be static.
+For this project I was asked to build a web-based application composed of two pages. The first page is a login page with email and password fields. The second page retrieves and displays all vehicle data from a database. The number of vehicles in the database should not assumed to be static.
 
 This application was built using ReactJS, ExpressJS, nodeJS & PostgreSQL.
 
