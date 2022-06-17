@@ -1,6 +1,6 @@
 # Modo-Challange
 
-For this project I was asled to build a web-based application composed of two pages. The first page is a login page with email and password fields. The second page retrieves and displays all vehicle data from a database. The number of vehicles in the database should not assumed to be static.
+For this project I was asked to build a web-based application composed of two pages. The first page is a login page with email and password fields. The second page retrieves and displays all vehicle data from a database. The number of vehicles in the database should not assumed to be static.
 
 This application was built using ReactJS, ExpressJS, nodeJS & PostgreSQL.
 
@@ -11,7 +11,7 @@ This application was built using ReactJS, ExpressJS, nodeJS & PostgreSQL.
 
 
 ## Create your Local PostgreSQL Database
-3. In your terminal, `cd` into the express-back-end folder and type `psql`. (if you do not have postgress installed, install it globally using the `npm install -g pg` command)
+3. In your terminal, `cd` into the express-back-end folder and type `psql`. (if you do not have postgress installed, install it globally using the `brew install postgresql` command)
 4. Inside of the psql environment, create a new role named 'me' using the commands below:
 ```
 CREATE ROLE me WITH LOGIN PASSWORD 'password';
