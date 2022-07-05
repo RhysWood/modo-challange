@@ -12,6 +12,8 @@ const corsOptions ={
    credentials:true,            //access-control-allow-credentials:true
    optionSuccessStatus:200,
 }
+const bcrypt = require('bcryptjs');
+
 
 App.use(cors(corsOptions))
 App.use(cookieSession({
@@ -40,11 +42,16 @@ App.get('/users/email/:email', db.findUserByEmail)
 App.post("/auth", (req, res) => {
   const email = req.body.user;
   const password = req.body.pwd;
+  console.log(password);
+
   let user;
   db.findUserByEmail(email).then(result => {
     console.log(result);
    let user = result;
-   if (password !== user.password){
+   const hashedPassword = user.password
+   const access = bcrypt.compareSync(password, hashedPassword);
+  console.log();
+   if (!access){
     return res.status(401).send('password does not match.');
    }
    //happy path 
